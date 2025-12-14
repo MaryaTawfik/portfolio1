@@ -6,12 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Marya Tawfik | Portfolio</title>
   <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
   <section class="hero">
     <div class="profile_img">
       <div class="ring">
-        <img src="profile.png" alt="Marya profile photo">
+        <img src="bat.jpg" alt="Marya profile photo">
       </div>
     </div>
 
@@ -23,7 +25,7 @@
         I’m passionate about web development, exploring both frontend and backend. While I enjoy building interactive user interfaces with HTML, CSS, JavaScript, and React.js, 
         my deeper passion lies in backend development—where I focus on creating scalable systems, managing data, and building reliable solutions.
       </p>
-      <button class="contact-btn" id="showContact">Contact</button>
+      <button class="contact-btn" id="showContact">Contact me</button>
       <button class="projects-btn" id="showProjects"> see my Projects</button>
     </div>
   </section>
@@ -49,7 +51,7 @@
 </div>
 
 
-<section id="contactForm" class="contact hidden">
+<!-- <section id="contactForm" class="contact hidden">
   <h2>Contact Me</h2>
   <form>
     <label for="name">Name:</label><br>
@@ -63,9 +65,60 @@
 
     <button type="submit">Send Message</button>
   </form>
-</section>
+</section> -->
+
+<div id="contactModal" class="modal hidden">
+  <div class="modal-content">
+    <span class="close-btn" id="closeContact">&times;</span>
+    <h2>Contact Me</h2>
+    <form>
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea><br><br>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</div>
 
   </div>
+  
+<footer class="footer">
+  <div class="footer-content">
+    
+    <ul class="social-links">
+      <li>
+        <a href="mailto:mariyatawfik6@gmail.com" target="_blank">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://linkedin.com/in/marya-tawfik" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/MaryaTawfik" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://leetcode.com/u/gAeoNavwKy/" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" 
+               alt="LeetCode" class="leetcode-logo">
+        </a>
+      </li>
+    </ul>
+  </div>
+</footer>
+
+<!-- Font Awesome CDN for icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
   <script src="index.js"></script>
 </body>
