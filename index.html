@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marya Tawfik | Portfolio</title>
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+  <section class="hero">
+    <div class="profile_img">
+      <div class="ring">
+        <img src="profile.png" alt="Marya profile photo">
+      </div>
+    </div>
+
+    <div class="hero-text">
+      <p class="intro">Hello, I'm</p>
+      <h1 class="highlight">Marya Tawfik</h1>
+      <p class="sub-text">
+        I'm currently pursuing my degree at Adama Science and Technology University in the School of Electrical Engineering & Computing. 
+        I’m passionate about web development, exploring both frontend and backend. While I enjoy building interactive user interfaces with HTML, CSS, JavaScript, and React.js, 
+        my deeper passion lies in backend development—where I focus on creating scalable systems, managing data, and building reliable solutions.
+      </p>
+      <button class="contact-btn" id="showContact">Contact</button>
+      <button class="projects-btn" id="showProjects"> see my Projects</button>
+    </div>
+  </section>
+
+ 
+<div id="projectsModal" class="modal hidden">
+  <div class="modal-content">
+    <span class="close-btn" id="closeProjects">&times;</span>
+    <h2>My Projects</h2>
+    <ul>
+      <li>
+        <h3>Blog App</h3>
+        <a href="https://blog-app1-7mtp.vercel.app/" target="_blank">Deployed Link</a> | 
+        <a href="https://github.com/MaryaTawfik/blog-app1.git" target="_blank">GitHub Repo</a>
+      </li>
+      <li>
+        <h3>Library Management System</h3> (developed as a group project)<br>
+        <a href="https://library-management-system-qbd3.vercel.app/" target="_blank">Deployed Link</a> | 
+        <a href="https://github.com/MaryaTawfik/library-management-system.git" target="_blank">GitHub Repo</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+<section id="contactForm" class="contact hidden">
+  <h2>Contact Me</h2>
+  <form>
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea><br><br>
+
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
+
